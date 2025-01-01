@@ -2,8 +2,9 @@
 import { useEffect, useState } from "react";
 import { getUser } from "@/lib/supabaseClient";
 import { User } from "@supabase/supabase-js";
+import ProtectedRoute from "@/lib/protect";
 
-export default function Profile() {
+const Profil = () => {
   const [user, setUser] = useState<User | null>(null);
 
   useEffect(() => {
@@ -26,9 +27,10 @@ export default function Profile() {
   }
 
   return (
-    <div>
-      <h1>Profile</h1>
-      <p>Email: {user.email}</p>
-    </div>
+    <ProtectedRoute>
+      <div>Bu içerik korumalıdır. {user.email}</div>
+    </ProtectedRoute>
   );
-}
+};
+
+export default Profil;
