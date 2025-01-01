@@ -13,9 +13,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full flex items-center gap-x-3 justify-between  py-5">
+    <div className="w-full flex items-center gap-x-3 justify-between mb-5  py-5">
       <Link href={"/"}>
-        <Image alt="Logo" src={Logo} width={100} />
+        <Image alt="Logo" src={Logo} width={120} />
       </Link>
       <div className="space-x-5">
         <Link className="hover:text-neutral-500" href={"/ilanlar"}>

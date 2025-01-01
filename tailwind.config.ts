@@ -14,7 +14,8 @@ const config: Config = {
         primary: "#3B9B8B"
       },
       backgroundImage: {
-        pattern: "url('/pattern.svg')"
+        pattern: "url('/pattern.svg')",
+        guide : "url('/isgorusmesi.jpg')"
       }
     },
   },
