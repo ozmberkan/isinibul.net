@@ -1,3 +1,7 @@
+import { TbBolt, TbShield, TbWind } from "react-icons/tb";
+import { PiHandbag } from "react-icons/pi";
+
+
 export const PopularSearchs = [
     {
         id: 1,
@@ -50,3 +54,11 @@ export const PopularSearchs = [
         key: "makine-muhendisi"
     }
 ];
+
+
+export const featuresText = [
+    {id:1, title:"Hızlı İş Bul", icon: TbBolt},
+    {id:2, title:"Güvenli" , icon :TbShield},
+    {id:3, title:"Zahmetsiz" , icon : TbWind},
+    {id:4, title:"Kurumsal", icon : PiHandbag}
+]
