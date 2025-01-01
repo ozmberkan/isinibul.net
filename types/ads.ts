@@ -1,10 +1,5 @@
-// types/ads.ts
 export interface JobAd {
-  salaryrange: string;
-  jobtype: string;
-  applicationdeadline: string;
-  companyname: string;
-  id: number; // İlanın benzersiz kimliği
+  _id: string; // MongoDB tarafından oluşturulan benzersiz kimlik
   title: string; // İlan başlığı
   description: string; // İlan açıklaması
   companyName: string; // Firma adı
@@ -18,5 +13,8 @@ export interface JobAd {
   requirements?: string; // Gereklilikler
   benefits?: string; // Avantajlar
   contactEmail?: string; // Başvuru e-postası
+  appliedUsers?: string[]; // Başvuru yapan kullanıcıların ID'leri (isteğe bağlı)
   isActive: boolean; // İlanın aktifliği
+  createdAt?: string; // Oluşturulma tarihi
+  updatedAt?: string; // Güncellenme tarihi
 }

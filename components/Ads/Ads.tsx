@@ -12,7 +12,7 @@ type AdsFullProps = {
 const Ads = ({ ad }: AdsFullProps) => {
   return (
     <Link
-      href={"/ilan/" + ad.id}
+      href={"/ilan/" + ad._id}
       className="w-full group bg-white hover:shadow rounded-xl transition-all duration-300  border border-l-8 min-h-[170px] border-l-primary px-5 py-3 flex flex-col"
     >
       <div className="w-full flex justify-between items-center ">
@@ -29,7 +29,7 @@ const Ads = ({ ad }: AdsFullProps) => {
             </span>
           ))}
           <p className="text-xs bg-primary/10 rounded-full border border-primary px-2 text-primary">
-            {ad.jobtype}
+            {ad.jobType}
           </p>
         </div>
       </div>
@@ -37,7 +37,7 @@ const Ads = ({ ad }: AdsFullProps) => {
       <div className="flex flex-col gap-2 py-4">
         <p className="text-gray-500 text-sm flex items-center gap-x-2">
           <TbBuildingSkyscraper />
-          {ad.companyname}
+          {ad.companyName}
         </p>
         <p className="text-gray-500 text-sm flex items-center gap-x-2">
           <GrLocation />
@@ -45,7 +45,7 @@ const Ads = ({ ad }: AdsFullProps) => {
         </p>
         <p className="text-gray-500 text-sm flex items-center gap-x-2">
           <GrMoney />
-          {ad.salaryrange}₺
+          {ad.salaryRange}₺
         </p>
       </div>
       <div className="flex flex-col gap-3">
@@ -59,7 +59,7 @@ const Ads = ({ ad }: AdsFullProps) => {
       <div className="flex items-center justify-between mt-3">
         <div>
           <p className="text-gray -500 text-sm">
-            Son Başvuru: {dayjs(ad.applicationdeadline).format("DD.MM.YYYY")}
+            Son Başvuru: {dayjs(ad.applicationDeadline).format("DD.MM.YYYY")}
           </p>
         </div>
         <div>
