@@ -11,7 +11,11 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "#3B9B8B"
       },
+      backgroundImage: {
+        pattern: "url('/pattern.svg')"
+      }
     },
   },
   plugins: [],

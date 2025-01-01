@@ -13,13 +13,22 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full flex items-center gap-x-3 justify-between border-b py-5">
+    <div className="w-full flex items-center gap-x-3 justify-between  py-5">
       <Link href={"/"}>
         <Image alt="Logo" src={Logo} width={100} />
       </Link>
-      <Button size="small" onClick={routeLogin}>
-        Oturum aç
-      </Button>
+      <div className="space-x-5">
+        <Link className="hover:text-neutral-500" href={"/ilanlar"}>
+          İş Ara
+        </Link>
+        <Link className="hover:text-neutral-500" href={"/rehber"}>
+          Rehber
+        </Link>
+
+        <Button size="small" onClick={routeLogin}>
+          Aday girişi
+        </Button>
+      </div>
     </div>
   );
 };

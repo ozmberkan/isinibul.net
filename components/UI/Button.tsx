@@ -8,7 +8,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({ size, children, onClick }) => {
   const buttonClass = classNames(
-    "px-3 py-1 bg-[#3B9B8B] text-white hover:bg-[#3B9B9C]  transition-colors rounded-full",
+    "px-3 py-1 bg-primary text-white hover:bg-primary  transition-colors rounded-full",
     {
       "text-sm": size === "small",
       "text-md": size === "medium",
