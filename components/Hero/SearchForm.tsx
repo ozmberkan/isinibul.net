@@ -9,6 +9,7 @@ const SearchForm = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
+    if (searchTerm === "") return;
     e.preventDefault();
     router.push(`/ilanlar/?q=${searchTerm}`);
     setSearchTerm("");

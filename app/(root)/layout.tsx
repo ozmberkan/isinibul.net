@@ -3,6 +3,8 @@ import "../globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
+import NextTopLoader from "nextjs-toploader";
+import Upbar from "@/components/Navbar/Upbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <NextTopLoader showSpinner={false} color="#3B9B8B" />
         <div className="container mx-auto">
+          <Upbar />
           <Navbar />
           <main className="min-h-screen ">{children}</main>
           <Footer />

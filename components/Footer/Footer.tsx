@@ -17,7 +17,7 @@ const Footer = () => {
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 Biz Kimiz
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="text-gray-500 dark:text-gray-400 font-medium text-sm">
                 <li className="mb-4">
                   <Link href="/hakkimizda" className="hover:underline">
                     Hakkımızda
@@ -29,7 +29,7 @@ const Footer = () => {
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 Rehber
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="text-gray-500 dark:text-gray-400 font-medium text-sm">
                 <li className="mb-4">
                   <Link href="/rehber" className="hover:underline">
                     CV Rehberi
@@ -46,7 +46,7 @@ const Footer = () => {
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 Yasal
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="text-gray-500 dark:text-gray-400 font-medium text-sm">
                 <li className="mb-4">
                   <Link href="/rehber" className="hover:underline">
                     Çerez Politikası
@@ -65,7 +65,7 @@ const Footer = () => {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2025{" "}
-            <Link href="/" className="hover:underline">
+            <Link href="/" className="hover:underline text-sm">
               İşinibul.net™
             </Link>
             . Tüm hakları saklıdır.
