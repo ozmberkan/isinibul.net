@@ -7,9 +7,9 @@ import Footer from "@/components/Footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "İş Bulur - Kolayca İşini Bulur!",
+  title: "İşinibul.net - Kolayca İşini Bulur!",
   description:
-    "İş Bulur, iş arayanlar ve işverenleri bir araya getiren bir platformdur.",
+    "İşinibul.net, iş arayanlar ve işverenleri bir araya getiren bir platformdur.",
 };
 
 export default function RootLayout({
