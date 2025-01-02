@@ -6,6 +6,7 @@ import Footer from "@/components/Footer/Footer";
 import NextTopLoader from "nextjs-toploader";
 import Upbar from "@/components/Navbar/Upbar";
 import ReduxProvider from "@/redux/ReduxProvider";
+import { Toaster } from "sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ReduxProvider>
+          <Toaster />
           <NextTopLoader showSpinner={false} color="#3B9B8B" />
           <div className="container mx-auto">
             <Upbar />

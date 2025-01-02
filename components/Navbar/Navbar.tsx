@@ -4,9 +4,13 @@ import Logo from "@/assets/logo.svg";
 import Button from "../UI/Button";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { useSelector } from "react-redux";
+import { RootState } from "@/redux/store";
 
 const Navbar = () => {
   const route = useRouter();
+
+  const { user } = useSelector((store: RootState) => store.user);
 
   const routeLogin = () => {
     route.push("/giris");
@@ -24,9 +28,18 @@ const Navbar = () => {
         <Link className="hover:text-neutral-500" href={"/rehber"}>
           Rehber
         </Link>
-        <Button size="small" onClick={routeLogin}>
-          Aday girişi
-        </Button>
+        {user ? (
+          <Link
+            className="px-3 py-1 bg-primary text-white hover:bg-primary  transition-colors rounded-full text-sm"
+            href={"/profil"}
+          >
+            Profilim
+          </Link>
+        ) : (
+          <Button size="small" onClick={routeLogin}>
+            Aday girişi
+          </Button>
+        )}
       </div>
     </div>
   );
